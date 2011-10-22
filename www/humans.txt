@@ -4,18 +4,10 @@
 
 /* TEAM */
   Designer & Front-End Developer: Terrance Pitre
-  Site: http://derbydidit.com
+  Site: http://southleft.com
   Twitter: http://twitter.com/tpitre
   Location: NYC
   
-  Back-End Developer & Drupal Extraordinaire: Mark Dorison
-  Site: http://derbydidit.com
-  Twitter: http://twitter.com/markdorison
-  Location: NYC
-
-/* THANKS */
-  Names (& URL): 
-
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
