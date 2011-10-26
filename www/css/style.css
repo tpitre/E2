@@ -16,7 +16,7 @@ body {
     font: normal 100% OpenSansRegular, Arial, sans-serif;
     color: #424040;
     padding: 20px 0 40px 0;
-    background: #fff url('../img/map.jpg') no-repeat center top;
+    background: #fff url('../img/bg-red-grad.jpg') repeat-x center top;
 }
 
 a {
@@ -100,7 +100,8 @@ button:active { margin: 2px 0 -2px }
 
 #main-header {
 	text-align: center;
-	margin-bottom: 1.5em;
+	margin-bottom: 2.5em;
+	color: #fff;
 }
 
 #main-header .e2-logos {
@@ -127,6 +128,7 @@ button:active { margin: 2px 0 -2px }
 	margin: .16em 0;	
 }
 
+
 /* Main Content */
 
 #main-content {
@@ -135,8 +137,13 @@ button:active { margin: 2px 0 -2px }
 
 #main-content .block {
 	float: left;
-	width: 31.25%;	/* 300 / 960 */
-	margin-right: 3.125%;  /* 30 / 960 */
+	background-color: #fff;
+	padding: 6px .75em;
+	width: 28.75%;	/* 300 - 24 / 960 */
+	margin-right: 2.08333%;  /* 20 / 960 */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 #main-content .block strong {
@@ -146,6 +153,7 @@ button:active { margin: 2px 0 -2px }
 }
 
 #main-content .block h2 {
+	margin: .3em 0 .7em;
 	border-bottom: 1px solid #eee;
 }
 
