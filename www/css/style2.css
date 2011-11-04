@@ -20,7 +20,7 @@ body {
 }
 
 a {
-    color: #bd0000;
+    color: #2c2c2c;
     text-decoration: none;
     border-bottom: 1px dotted #333;
     -webkit-transition: all .3s ease-in-out;
@@ -54,7 +54,7 @@ h4 {
 }
 
 h1 {
-	font-size: 2.125em;	 /* 50 / 16 */
+	font-size: 3.125em;	 /* 50 / 16 */
 	text-shadow: 0 0 5px rgba(255,255,255,1);
 }
 
@@ -101,6 +101,13 @@ button:active { margin: 2px 0 -2px }
 	padding: 0 1.5em;
 }
 
+#main-container .emerilscom {
+	position: fixed;
+	top: 0;
+	left: 20px;
+	border-bottom: none;
+}
+
 #main-header {
 	text-align: center;
 	margin-bottom: 2.1em;
@@ -119,26 +126,18 @@ button:active { margin: 2px 0 -2px }
 }
 
 #main-header em {
-	font-size: 1em;
+	font-size: 1.4em;
 	font-style: normal;
 }
 
 #main-content {
 	overflow: hidden;
-	background-color: #fff;
-	padding: .6em 3.125% 1.5em; /* 30 / 960 */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.4);
-	-moz-box-shadow: 0px 0px 5px rgba(0,0,0,.4);
-	box-shadow: 0px 0px 5px rgba(0,0,0,.4);
 }
 
 #main-content .block {
 	float: left;
 	width: 31%;	/* 300 / 960 */
-	margin-right: 3.4375%;  /* 33 / 960 */
+	margin-right: 3.3333%;  /* 32 / 960 */
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -211,7 +210,6 @@ button:active { margin: 2px 0 -2px }
 
 #main-content .location em {
 	font-size: 85%;
-	font-style: normal;
 }
 
 #main-content .location .map {
@@ -220,91 +218,11 @@ button:active { margin: 2px 0 -2px }
 
 #main-content .location .map-link {
 	border-bottom: none;
-	display: block;
-	text-indent: -999em;
-	width: 100%;
-	height: 15em;
-	background: transparent url('../img/map.jpg') no-repeat center center;
-	-webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
-	-moz-box-shadow: inset 0 0 0 rgba(0,0,0,0);
-	box-shadow: inset 0 0 0 rgba(0,0,0,0);
-	-webkit-transition: all .3s ease-out;
-	-moz-transition: all .3s ease-out;
-	-o-transition: all .3s ease-out;
-	-ms-transition: all .3s ease-out;
-	transition: all .3s ease-out;
 }
 
-#main-content .location .map-link:hover {
-	-webkit-box-shadow: inset 0 0 8px rgba(0,0,0,.35);
-	-moz-box-shadow: inset 0 0 8px rgba(0,0,0,.35);
-	box-shadow: inset 0 0 8px rgba(0,0,0,.35);
-}
-
-footer#main-footer {
+footer {
 	padding: 2em 0;
-	margin-bottom: 1em;
     font-size: 75%;
-    overflow: hidden;
-}
-
-footer#main-footer .copyright {
-	float: left;
-}
-
-footer#main-footer .emerilscom {
-	margin-top: -.4em;
-	float: right;
-	border-bottom: none;
-	text-align: right;
-}
-
-.modal-bg {
-	background-color: #000;
-	position: fixed;
-	z-index: 5;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: .3;
-	filter: alpha(opacity=30);
-	display: none;
-}
-
-.modal {
-	position: fixed;
-	z-index: 10;
-	background-color: #fff;
-	top: 12%;
-	padding: 3% 3% 1%;
-	width: 50%;
-	left: 50%;
-	margin-left: -28%;
-	border: 1px solid #eee;
-	display: none;
-	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,.4);
-	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,.4);
-	box-shadow: 0px 0px 15px rgba(0,0,0,.4);
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
-
-.modal .close {
-	position: absolute;
-	right: 12px;
-	top: 5px;
-	border-bottom: none;
-}
-
-.modal h1 {
-	margin-top: 0;
-	border-bottom: 1px solid #333;
-}
-
-.modal li {
-	font-family: OpenSansBold, Arial, sans-serif;
 }
 
 /* @end */
@@ -313,9 +231,14 @@ footer#main-footer .emerilscom {
 /* @group Media Queries
 --------------------------------------------- */
 @media screen and (max-width: 800px) { 
-	#main-container {
-		margin-top: 0;
-	}	
+	#main-content .emerilscom {
+		position: absolute;
+		left: 50%;
+		margin-left: -76px;
+	}
+	#main-content .emerilscom img {
+		max-width: 70%;
+	}
 	#main-content .news {
 		float: none;
 		width: 100%;
@@ -330,32 +253,9 @@ footer#main-footer .emerilscom {
 		width: 48%; /* 360 / 750 */
 		margin: 0;
 	}
-	footer#main-footer .copyright {
-		float: none;
-		text-align: center;
-	}
-	footer#main-footer .emerilscom {
-		width: 100%;
-		text-align: center;
-	}
-	footer#main-footer .emerilscom img {
-		max-width: 75%;
-	}
-	.modal {
-		top: 10%;
-		width: 60%;
-		left: 50%;
-		margin-left: -32.5%;
-	}
 }
 
 @media screen and (max-width: 500px) { 
-	#main-container {
-		padding: 0 .5em;
-	}
-	#main-content { 
-		padding-bottom: 0;
-	}
 	#main-content .news,
 	#main-content .connect,
 	#main-content .location {
@@ -363,14 +263,14 @@ footer#main-footer .emerilscom {
 		width: 100%;
 		margin: 0 0 2.8em;
 	}
-	#main-content .location {
-		margin-bottom: 1.2em;
+}
+
+@media screen and (max-width: 390px) {
+	#main-header h1 {
+		font-size: 2em;
 	}
-	.modal {
-		top: 10%;
-		width: 80%;
-		left: 50%;
-		margin-left: -43%;
+	#main-header em {
+		font-size: .8em;
 	}
 }
 /* @end */
