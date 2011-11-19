@@ -5,10 +5,10 @@
 $(function(){
 	
 	// basic modal open/close
-	$('.work-modal').click(function(e){
-		 $('.modal').fadeIn();
-		 $('.modal-bg').fadeIn();
-		 e.preventDefault();
+	$('.work-modal').click(function(e){		
+		$('.modal').css('top', $(window).scrollTop()+30).fadeIn();
+		$('.modal-bg').fadeIn();
+		e.preventDefault();
 	});
 	
 	$('.modal .close, .modal-bg').click(function(e) {

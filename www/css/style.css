@@ -278,7 +278,7 @@ footer#main-footer .emerilscom {
 }
 
 .modal {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
 	background-color: #fff;
 	top: 12%;
@@ -308,8 +308,28 @@ footer#main-footer .emerilscom {
 	border-bottom: 1px solid #333;
 }
 
-.modal li {
-	font-family: OpenSansBold, Arial, sans-serif;
+.modal .modal-content {
+	font-size: 85%;
+}
+
+.modal .positions {
+	overflow: hidden;
+	padding: 0 10%;
+	margin: 0 auto;
+}
+
+.modal .positions li {
+	float: left;
+	list-style-type: none;
+	width: 32%;
+}
+
+.modal .work-locations li {
+	margin-bottom: 1em;
+}
+
+.modal .work-locations li em {
+	color: #7b0101;
 }
 
 /* @end */
@@ -352,6 +372,9 @@ footer#main-footer .emerilscom {
 		left: 50%;
 		margin-left: -32.5%;
 	}
+	.modal .modal-content {
+		font-size: 80%;
+	}
 }
 
 @media screen and (max-width: 500px) { 
@@ -376,6 +399,12 @@ footer#main-footer .emerilscom {
 		width: 80%;
 		left: 50%;
 		margin-left: -43%;
+	}
+	.modal .positions {
+		padding: 0 9%;
+	}
+	.modal .positions li {
+		width: 50%;
 	}
 }
 /* @end */

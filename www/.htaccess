@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*) http://e2emerils.com/$1 [R=301,L]
